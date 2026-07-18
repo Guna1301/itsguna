@@ -1,17 +1,15 @@
-import { navigation } from "../../../data/navigation";
+import { navigation } from "@/data/navigation";
+import { NavItem } from "./NavItem";
 
 export function DesktopNav() {
-	return (
-		<nav className="hidden items-center gap-8 md:flex">
-			{navigation.map((item) => (
-				<a
-					key={item.label}
-					href={item.href}
-					className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-				>
-					{item.label}
-				</a>
-			))}
-		</nav>
-	);
+  return (
+    <nav
+      className="group hidden items-center gap-8 md:flex"
+      aria-label="Primary navigation"
+    >
+      {navigation.map((item) => (
+        <NavItem key={item.label} item={item} />
+      ))}
+    </nav>
+  );
 }

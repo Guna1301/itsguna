@@ -1,3 +1,9 @@
+import { Section } from "@/components/common/Section";
+
 export default function Contact() {
-  return <h1>Contact</h1>;
+  return (
+    <Section>
+      <h1>Contact</h1>
+    </Section>
+  );
 }

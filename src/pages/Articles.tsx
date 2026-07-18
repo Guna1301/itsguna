@@ -1,3 +1,9 @@
+import { Section } from "@/components/common/Section";
+
 export default function Articles() {
-  return <h1>Articles</h1>;
+  return (
+    <Section>
+      <h1>Articles</h1>
+    </Section>
+  );
 }
