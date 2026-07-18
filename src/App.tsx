@@ -1,17 +1,23 @@
-import { Container } from "@/components/common/Container";
-import { Section } from "@/components/common/Section";
-import { SectionHeading } from "@/components/common/SectionHeading";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { Layout } from "./components/layout/Layout";
+import Articles from "./pages/Articles";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <Section>
-      <Container>
-        <SectionHeading
-          title="Hello"
-          description="Testing our design system."
-        />
-      </Container>
-    </Section>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
