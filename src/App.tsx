@@ -1,8 +1,18 @@
+import { Container } from "@/components/common/Container";
+import { Section } from "@/components/common/Section";
+import { SectionHeading } from "@/components/common/SectionHeading";
 
-const App = () => {
+function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center text-red-500 bg-gray-100">App</div>
-  )
+    <Section>
+      <Container>
+        <SectionHeading
+          title="Hello"
+          description="Testing our design system."
+        />
+      </Container>
+    </Section>
+  );
 }
 
-export default App
+export default App;
