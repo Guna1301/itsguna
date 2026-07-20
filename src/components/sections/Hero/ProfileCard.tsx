@@ -17,10 +17,10 @@ export function ProfileCard() {
         <div className="relative px-4 sm:px-6 md:px-8">
             <div className="flex items-start justify-between">
                 <Avatar
-                    className="-mt-16 size-24 rounded-none border-4 border-background bg-card sm:-mt-20 sm:size-32"
+                    className="-mt-16 size-24 rounded-sm border-4 border-background bg-card sm:-mt-20 sm:size-32"
                 >
-                    <AvatarImage src={profile.avatar} alt={profile.name} className="rounded-none object-cover" />
-                    <AvatarFallback className="rounded-none bg-muted text-2xl font-semibold text-foreground">
+                    <AvatarImage src={profile.avatar} alt={profile.name} className="rounded-sm object-cover" />
+                    <AvatarFallback className="rounded-sm bg-muted text-2xl font-semibold text-foreground">
                         {getInitials(profile.name)}
                     </AvatarFallback>
                 </Avatar>

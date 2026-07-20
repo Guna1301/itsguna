@@ -1,5 +1,5 @@
 import avatar from "@/assets/images/profile.jpg";
-import banner from "@/assets/images/banner.jpg";
+import banner from "@/assets/images/image.png";
 
 export const profile = {
   name: "Guna Sai",
