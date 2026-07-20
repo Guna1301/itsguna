@@ -1,8 +1,9 @@
 import { useArticles } from "@/hooks/useArticles";
-import { Container } from "@/components/common/Container";
+
 import { Section } from "@/components/common/Section";
 import { ArticlesGrid } from "./ArticlesGrid";
-import {ArrowUpRightIcon} from "@/assets/icons/ArrowUpRightIcon";
+import { ArrowUpRight} from "lucide-react";
+import { ArrowUpRightIcon } from "@/assets/icons/ArrowUpRightIcon";
 
 export function Articles() {
     const { data: articles, isLoading, isError } = useArticles();
@@ -26,7 +27,7 @@ export function Articles() {
                         className="group inline-flex items-center gap-1.5 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
                     >
                         View all 
-                        <ArrowUpRightIcon className="size-3.5 opacity-70 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100" />
+                        <ArrowUpRight className="size-3.5 opacity-70 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100" />
                     </a>
                 </div>
 

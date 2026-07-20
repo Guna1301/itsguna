@@ -1,4 +1,5 @@
 import { Articles } from "@/components/sections/articles/Articles";
+import { Contact } from "@/components/sections/Contact";
 import { Hero } from "@/components/sections/Hero/Hero";
 import { FeaturedProjects } from "@/components/sections/Projects/FeaturedProjects";
 import { TechStack } from "@/components/sections/tech-stack/TechStack";
@@ -12,6 +13,7 @@ export default function Home() {
       <Timeline/>
       <TechStack/>
       <Articles/>
+      <Contact/>
     </>
   );
 }

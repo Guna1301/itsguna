@@ -12,12 +12,12 @@ export const navigation: NavigationItem[] = [
     label: "Projects",
     href: "/projects",
   },
+  // {
+  //   label: "Experiences",
+  //   href: "/timeline",
+  // },
   {
     label: "Articles",
     href: "/articles",
-  },
-  {
-    label: "Contact",
-    href: "/contact",
   },
 ];

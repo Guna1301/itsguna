@@ -2,7 +2,6 @@ import { ArrowUpRight} from "lucide-react";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
 
-import { Container } from "@/components/common/Container";
 import { Section } from "@/components/common/Section";
 
 

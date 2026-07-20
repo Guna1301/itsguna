@@ -18,7 +18,7 @@ export const socials = [
 	},
 	{
 		label: "Mail",
-		href: "mailto:hello@gsxvoid.dev",
+		href: "mailto:gunasai1305@gmail.com",
 		icon: Mail,
 	},
 	{
