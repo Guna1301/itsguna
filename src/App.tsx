@@ -5,6 +5,7 @@ import Articles from "./pages/Articles";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import TimelinePage from "./pages/Timeline";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
