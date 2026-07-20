@@ -7,7 +7,7 @@ export function SocialLinks() {
     return (
         <div className="border-t border-border/70 py-6 sm:py-8">
             <h2 className="mb-5 font-serif text-2xl text-foreground">
-                Contact
+                Socials
             </h2>
 
             <div className="grid w-full grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">

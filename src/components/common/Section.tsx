@@ -19,7 +19,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={`py-20 md:py-28 ${className}`}
+      className={`py-8 md:py-8 ${className}`}
     >
       {withContainer ? (
         <Container className={containerClassName}>{children}</Container>

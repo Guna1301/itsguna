@@ -8,7 +8,7 @@ import { SocialLinks } from "./SocialLinks";
 
 export function Hero() {
   return (
-    <Section className="pb-12 pt-6 md:pb-16 md:pt-10">
+    <Section>
       <Container>
         <div className="flex w-full flex-col">
           <HeroBanner />
