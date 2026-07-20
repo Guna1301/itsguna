@@ -8,32 +8,37 @@ interface TimelineItemProps {
 
 export function TimelineItem({ item, isLast }: TimelineItemProps) {
     return (
-        <div className="relative flex w-full flex-col pb-10 sm:pb-14">
-            
+        <div className="relative flex w-full flex-col pb-8 sm:pb-10">
             <TimelineConnector isLast={isLast} />
             
-            <div className="ml-7 mt-5 flex flex-col gap-3 sm:ml-9">
-                <div className="flex flex-col gap-1">
-                    <h3 className="font-sans text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+            {/* Reduced top margin and tightened gap to save vertical space */}
+            <div className="ml-7 mt-3 flex flex-col gap-2 sm:ml-9">
+                <div>
+                    {/* Consistent font-sans and text-lg matched with ProjectCard */}
+                    <h3 className="font-sans text-lg font-bold tracking-tight text-foreground">
                         {item.title}
                     </h3>
-                    <p className="text-sm font-medium text-foreground/60 sm:text-base">
+                    
+                    {/* Consistent text-xs for the subtitle details */}
+                    <p className="mt-0.5 text-xs font-medium text-foreground/60">
                         {item.organization}
-                        <span className="mx-2 text-foreground/30">•</span>
+                        <span className="mx-1.5 text-foreground/40">•</span>
                         {item.duration}
                     </p>
                 </div>
 
-                <p className="max-w-2xl text-sm leading-relaxed text-foreground/80 sm:text-base">
+                {/* Consistent text-sm for description */}
+                <p className="text-sm leading-relaxed text-foreground/70">
                     {item.description}
                 </p>
 
+                {/* Tech Stack Pills matching the ProjectCard */}
                 {item.technologies && (
-                    <div className="mt-2 flex flex-wrap gap-2">
+                    <div className="mt-1 flex flex-wrap gap-1.5">
                         {item.technologies.map((tech) => (
                             <span 
                                 key={tech} 
-                                className="rounded-md border border-border/50 bg-muted/50 px-2.5 py-1 text-[10px] font-medium text-foreground/80 sm:text-xs"
+                                className="rounded-md border border-border/50 bg-muted/50 px-2 py-1 text-[10px] font-medium text-foreground/80"
                             >
                                 {tech}
                             </span>
