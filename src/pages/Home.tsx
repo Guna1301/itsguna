@@ -1,3 +1,4 @@
+import { Articles } from "@/components/sections/articles/Articles";
 import { Hero } from "@/components/sections/Hero/Hero";
 import { FeaturedProjects } from "@/components/sections/Projects/FeaturedProjects";
 import { TechStack } from "@/components/sections/tech-stack/TechStack";
@@ -10,6 +11,7 @@ export default function Home() {
       <FeaturedProjects />
       <Timeline/>
       <TechStack/>
+      <Articles/>
     </>
   );
 }

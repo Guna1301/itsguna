@@ -4,10 +4,14 @@ import './index.css'
 import App from './App.tsx'
 import { ThemeProvider } from './components/providers/ThemeProvider.tsx'
 
+import { Providers } from './components/Providers.tsx'
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
-      <App />
+      <Providers>
+        <App />
+      </Providers>
     </ThemeProvider>
   </StrictMode>,
 )
