@@ -1,11 +1,11 @@
 import { 
-    SiReact, SiVite, SiTailwindcss, SiFramer, SiHtml5, SiCss3,
+    SiReact, SiVite, SiTailwindcss, SiFramer, SiHtml5,
     SiSpringboot, SiNodedotjs, SiExpress, SiFastapi,
     SiPostgresql, SiMongodb, SiRedis,
-    SiDocker, SiAmazonwebservices,
-    SiGit, SiGithub, SiPostman, SiVisualstudiocode, SiIntellijidea, SiLinux, SiNpm
+    SiDocker, SiGit, SiGithub, SiPostman, SiLinux, SiNpm
 } from "react-icons/si";
-import { FaJava, FaPython } from "react-icons/fa";
+import { FaJava, FaPython, FaAws } from "react-icons/fa"; // AWS from FontAwesome
+import { TbBrandVscode } from "react-icons/tb"; // VS Code from Tabler Icons
 import { SiTypescript, SiJavascript } from "react-icons/si";
 
 import type { TechStackItem } from "@/types/tech-stack";
@@ -23,7 +23,6 @@ export const techStack: TechStackItem[] = [
     { id: "tailwind", name: "Tailwind CSS", icon: SiTailwindcss, category: "frontend" },
     { id: "framer", name: "Framer Motion", icon: SiFramer, category: "frontend" },
     { id: "html", name: "HTML5", icon: SiHtml5, category: "frontend" },
-    { id: "css", name: "CSS3", icon: SiCss3, category: "frontend" },
 
     // Backend
     { id: "spring", name: "Spring Boot", icon: SiSpringboot, category: "backend" },
@@ -38,16 +37,13 @@ export const techStack: TechStackItem[] = [
 
     // DevOps & Cloud
     { id: "docker", name: "Docker", icon: SiDocker, category: "devops" },
-    { id: "aws", name: "AWS", icon: SiAmazonwebservices, category: "devops" },
+    { id: "aws", name: "AWS", icon: FaAws, category: "devops" }, // Fixed AWS icon
 
     // Tools
     { id: "git", name: "Git", icon: SiGit, category: "tools" },
     { id: "github", name: "GitHub", icon: SiGithub, category: "tools" },
     { id: "postman", name: "Postman", icon: SiPostman, category: "tools" },
-    { id: "vscode", name: "VS Code", icon: SiVisualstudiocode, category: "tools" },
-    { id: "intellij", name: "IntelliJ IDEA", icon: SiIntellijidea, category: "tools" },
+    { id: "vscode", name: "VS Code", icon: TbBrandVscode, category: "tools" }, // Fixed VS Code icon
     { id: "linux", name: "Linux", icon: SiLinux, category: "tools" },
-    // Using a generic package icon for Maven since it lacks a widely standard simple icon, or you can import a custom one
-    { id: "maven", name: "Maven", icon: SiNpm, category: "tools" }, 
     { id: "npm", name: "npm", icon: SiNpm, category: "tools" },
 ];

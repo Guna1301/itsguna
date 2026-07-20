@@ -1,4 +1,4 @@
-import { Category } from "@/types/tech-stack";
+import type { Category } from "@/types/tech-stack";
 
 interface TechFiltersProps {
     activeFilter: Category;
@@ -17,21 +17,23 @@ const FILTERS: { label: string; value: Category }[] = [
 
 export function TechFilters({ activeFilter, onFilterChange }: TechFiltersProps) {
     return (
-        // Hide scrollbar but allow horizontal scrolling on mobile
-        <div className="flex w-full gap-2 overflow-x-auto pb-2 pl-1 pt-1 md:w-auto md:overflow-visible md:pb-0 md:pl-0 md:pt-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-            {FILTERS.map(({ label, value }) => (
-                <button
-                    key={value}
-                    onClick={() => onFilterChange(value)}
-                    className={`whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
-                        activeFilter === value
-                            ? "bg-foreground text-background"
-                            : "bg-muted/50 text-foreground/60 hover:bg-muted hover:text-foreground"
-                    }`}
-                >
-                    {label}
-                </button>
-            ))}
+        <div className="flex w-full gap-1 overflow-x-auto pb-2 md:w-auto md:overflow-visible md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            {FILTERS.map(({ label, value }) => {
+                const isActive = activeFilter === value;
+                return (
+                    <button
+                        key={value}
+                        onClick={() => onFilterChange(value)}
+                        className={`whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all cursor-pointer ${
+                            isActive
+                                ? "bg-background text-foreground shadow-sm border border-border/50"
+                                : "text-foreground/60 hover:text-foreground hover:bg-muted/50 border border-transparent"
+                        }`}
+                    >
+                        {label}
+                    </button>
+                );
+            })}
         </div>
     );
 }
