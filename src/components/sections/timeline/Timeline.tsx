@@ -12,9 +12,8 @@ export function Timeline() {
         <Section>
             <Container>
                 <div>
-                    {/* Header strictly matching FeaturedProjects */}
                     <div className="mb-8 flex items-end justify-between sm:mb-10">
-                        <h2 className="font-serif text-2xl text-foreground">
+                        <h2 className="font-serif text-2xl text-foreground sm:text-3xl">
                             Timeline
                         </h2>
                         

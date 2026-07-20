@@ -22,7 +22,7 @@ export function TechStack() {
                     
                     <div className="flex flex-col gap-6 border-b border-dashed border-border/70 pb-5 md:flex-row md:items-center md:justify-between">
                         <div className="flex items-baseline gap-3">
-                            <h2 className="font-serif text-2xl text-foreground">
+                            <h2 className="font-serif text-2xl text-foreground sm:text-3xl">
                                 Tech Stack
                             </h2>
                         </div>

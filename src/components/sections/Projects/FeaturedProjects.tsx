@@ -14,7 +14,7 @@ export function FeaturedProjects() {
             <Container>
                 <div>
                     <div className="mb-8 flex items-end justify-between sm:mb-10">
-                        <h2 className="font-serif text-2xl text-foreground">
+                        <h2 className="font-serif text-2xl text-foreground sm:text-3xl">
                             Projects
                         </h2>
                         

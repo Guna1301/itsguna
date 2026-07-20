@@ -4,7 +4,7 @@ export function HeroContent() {
     return (
         <div className="border-t border-border/70 py-6 sm:py-8">
             <div className="space-y-4">
-                <h2 className="font-serif text-2xl text-foreground">
+                <h2 className="font-serif text-2xl text-foreground sm:text-3xl">
                     About
                 </h2>
 
