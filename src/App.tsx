@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Layout } from "./components/layout/Layout";
 import Articles from "./pages/Articles";
-import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import TimelinePage from "./pages/Timeline";
@@ -16,7 +15,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/articles" element={<Articles />} />
-          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
