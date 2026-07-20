@@ -9,14 +9,12 @@ import { SocialLinks } from "./SocialLinks";
 export function Hero() {
   return (
     <Section>
-      <Container>
-        <div className="flex w-full flex-col">
-          <HeroBanner />
-          <ProfileCard />
-          <HeroContent />
-          <SocialLinks />
-        </div>
-      </Container>
+      <div className="flex w-full flex-col">
+        <HeroBanner />
+        <ProfileCard />
+        <HeroContent />
+        <SocialLinks />
+      </div>
     </Section>
   );
 }

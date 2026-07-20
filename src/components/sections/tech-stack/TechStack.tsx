@@ -17,28 +17,26 @@ export function TechStack() {
 
     return (
         <Section>
-            <Container>
-                <div className="mx-auto max-w-6xl">
-                    
-                    <div className="flex flex-col gap-6 border-b border-dashed border-border/70 pb-5 md:flex-row md:items-center md:justify-between">
-                        <div className="flex items-baseline gap-3">
-                            <h2 className="font-serif text-2xl text-foreground sm:text-3xl">
-                                Tech Stack
-                            </h2>
-                        </div>
-
-                        <div className="-mx-4 px-4 md:mx-0 md:px-0">
-                            <TechFilters 
-                                activeFilter={activeFilter} 
-                                onFilterChange={setActiveFilter} 
-                            />
-                        </div>
+            <div className="mx-auto max-w-6xl">
+                
+                <div className="flex flex-col gap-6 border-b border-dashed border-border/70 pb-5 md:flex-row md:items-center md:justify-between">
+                    <div className="flex items-baseline gap-3">
+                        <h2 className="font-serif text-2xl text-foreground sm:text-3xl">
+                            Tech Stack
+                        </h2>
                     </div>
 
-                    <TechGrid items={filteredItems} />
-
+                    <div className="-mx-4 px-4 md:mx-0 md:px-0">
+                        <TechFilters 
+                            activeFilter={activeFilter} 
+                            onFilterChange={setActiveFilter} 
+                        />
+                    </div>
                 </div>
-            </Container>
+
+                <TechGrid items={filteredItems} />
+
+            </div>
         </Section>
     );
 }
