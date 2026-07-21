@@ -4,6 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 
 import { Section } from "@/components/common/Section";
 
+import { Link } from "react-router-dom";
 
 export function FeaturedProjects() {
     const featuredProjects = projects.filter(p => p.featured);
@@ -16,13 +17,13 @@ export function FeaturedProjects() {
                         Projects
                     </h2>
                     
-                    <a 
-                        href="/projects" 
+                    <Link
+                        to="/projects"
                         className="group flex items-center gap-1.5 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
                     >
-                        View all 
+                        View all
                         <ArrowUpRight className="size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-1 lg:grid-cols-2 lg:gap-x-6 lg:gap-y-12">

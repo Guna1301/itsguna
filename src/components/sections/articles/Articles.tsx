@@ -5,6 +5,8 @@ import { ArticlesGrid } from "./ArticlesGrid";
 import { ArrowUpRight} from "lucide-react";
 import { ArrowUpRightIcon } from "@/assets/icons/ArrowUpRightIcon";
 
+import { Link } from "react-router-dom";
+
 export function Articles() {
     const { data: articles, isLoading, isError } = useArticles();
 
@@ -22,13 +24,13 @@ export function Articles() {
                         </p>
                     </div>
 
-                    <a 
-                        href="/articles" 
-                        className="group inline-flex items-center gap-1.5 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
+                    <Link
+                        to="/articles"
+                        className="group flex items-center gap-1.5 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
                     >
-                        View all 
-                        <ArrowUpRight className="size-3.5 opacity-70 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100" />
-                    </a>
+                        View all
+                        <ArrowUpRight className="size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                    </Link>
                 </div>
 
                 {isLoading && (

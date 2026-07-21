@@ -4,6 +4,8 @@ import { TimelineList } from "./TimelineList";
 
 import { Section } from "@/components/common/Section";
 
+import { Link } from "react-router-dom";
+
 export function Timeline() {
     const featuredMilestones = timeline.filter((item) => item.featured);
 
@@ -15,13 +17,13 @@ export function Timeline() {
                         Timeline
                     </h2>
                     
-                    <a 
-                        href="/timeline" 
+                    <Link
+                        to="/timeline"
                         className="group flex items-center gap-1.5 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
                     >
                         View full
                         <ArrowUpRight className="size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="pl-1 sm:pl-2">
