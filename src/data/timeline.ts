@@ -13,31 +13,20 @@ export interface TimelineItem {
 }
 
 export const timeline: TimelineItem[] = [
-    {
-        id: "1",
-        slug: "software-engineer-centific",
-        title: "Software Engineer",
-        organization: "Centific",
-        duration: "May 2026 – Present",
-        location: "Hyderabad, India",
-        type: "work",
-        description: "Building AI-powered automation systems and scalable backend infrastructure to enhance developer workflows and system reliability.",
-        technologies: ["Java", "Spring Boot", "Docker", "Redis"],
-        featured: true,
-    },
+    // {
+    //     id: "1",
+    //     slug: "ai-engineer-centific",
+    //     title: "AI Engineer",
+    //     organization: "Centific",
+    //     duration: "soon",
+    //     location: "Hyderabad, India",
+    //     type: "work",
+    //     description: "Working on cutting-edge AI solutions, focusing on developing and deploying machine learning models, and contributing to innovative projects that leverage artificial intelligence to solve real-world problems.",
+    //     technologies: ["Python", "FastAPI", "Docker"],
+    //     featured: true,
+    // },
     {
         id: "2",
-        slug: "centific-premier-hackathon",
-        title: "Centific Premier Hackathon Winner",
-        organization: "Centific",
-        duration: "March 2026",
-        location: "Hyderabad, India",
-        type: "achievement",
-        description: "Built an innovative AI solution demonstrating intelligent context management and real-time processing capabilities.",
-        featured: true,
-    },
-    {
-        id: "3",
         slug: "btech-cse",
         title: "Bachelor of Technology",
         organization: "Computer Science and Engineering",
