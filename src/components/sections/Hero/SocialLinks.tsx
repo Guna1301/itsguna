@@ -7,7 +7,7 @@ export function SocialLinks() {
     return (
         <div className="border-t border-border/70 py-6 sm:py-8">
             <h2 className="mb-5 font-serif text-2xl text-foreground sm:text-3xl">
-                Socials
+                Connect
             </h2>
 
             <div className="grid w-full grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
@@ -20,8 +20,8 @@ export function SocialLinks() {
                     >
                         <a 
                             href={href} 
-                            target={href.startsWith("/") ? undefined : "_blank"} 
-                            rel={href.startsWith("/") ? undefined : "noreferrer"}
+                            target={"_blank"} 
+                            rel={"noreferrer"}
                             className="flex w-full items-center justify-between"
                         >
                             <div className="flex items-center gap-2.5">

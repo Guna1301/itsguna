@@ -12,7 +12,6 @@ export const profile = {
     "I believe good software comes from understanding the fundamentals, paying attention to the details, and constantly improving with every project.",
     "When I'm not building, you'll probably find me learning something new, writing about it, or refining ideas that eventually turn into projects."
     ],
-  resume: "/resume.pdf",
   avatar,
   banner,
 } as const;

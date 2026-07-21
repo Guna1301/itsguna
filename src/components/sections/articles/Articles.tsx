@@ -9,7 +9,7 @@ export function Articles() {
     const { data: articles, isLoading, isError } = useArticles();
 
     return (
-        <Section className="border-t border-border/70 py-16 md:py-24">
+        <Section>
             <div className="mx-auto max-w-6xl">
                 
                 <div className="mb-10 flex flex-col gap-4 border-b border-border/70 pb-6 sm:mb-12 md:flex-row md:items-end md:justify-between">
