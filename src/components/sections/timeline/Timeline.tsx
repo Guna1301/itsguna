@@ -20,7 +20,7 @@ export function Timeline() {
                         href="/timeline" 
                         className="group flex items-center gap-1.5 text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
                     >
-                        View all 
+                        View full
                         <ArrowUpRight className="size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                     </a>
                 </div>

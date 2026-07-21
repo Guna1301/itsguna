@@ -5,7 +5,7 @@ import { socials } from "@/data/socials";
 
 export function SocialLinks() {
     return (
-        <div className="border-t border-border/70 py-6 sm:py-8">
+        <div>
             {/* <h2 className="mb-5 font-serif text-2xl text-foreground sm:text-3xl">
                 Presence
             </h2> */}

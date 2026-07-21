@@ -1,16 +1,5 @@
-export interface TimelineItem {
-    id: string;
-    slug: string;
-    title: string;
-    organization: string;
-    duration: string;
-    location?: string;
-    type: "work" | "education" | "achievement";
-    description: string;
-    technologies?: string[];
-    logo?: string;
-    featured: boolean;
-}
+import type { TimelineItem } from "@/types/timeline";
+
 
 export const timeline: TimelineItem[] = [
     // {
@@ -21,8 +10,8 @@ export const timeline: TimelineItem[] = [
     //     duration: "soon",
     //     location: "Hyderabad, India",
     //     type: "work",
-    //     description: "Working on cutting-edge AI solutions, focusing on developing and deploying machine learning models, and contributing to innovative projects that leverage artificial intelligence to solve real-world problems.",
-    //     technologies: ["Python", "FastAPI", "Docker"],
+    //     description: "",
+    //     technologies: [],
     //     featured: true,
     // },
     {
