@@ -1,10 +1,10 @@
 import { Section } from "@/components/common/Section";
 import { Container } from "@/components/common/Container";
 import { ArrowUpRightIcon } from "@/assets/icons/ArrowUpRightIcon";
-import { socials } from "@/data/socials";
+import { profile } from "@/data/profile";
 
 export function Contact() {
-    const mailLink = socials.find(social => social.label === "Mail")?.href;
+    const mailLink = profile.email ? `mailto:${profile.email}` : undefined;
 
     return (
         <Section >

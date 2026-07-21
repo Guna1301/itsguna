@@ -6,9 +6,9 @@ import { socials } from "@/data/socials";
 export function SocialLinks() {
     return (
         <div className="border-t border-border/70 py-6 sm:py-8">
-            <h2 className="mb-5 font-serif text-2xl text-foreground sm:text-3xl">
-                Connect
-            </h2>
+            {/* <h2 className="mb-5 font-serif text-2xl text-foreground sm:text-3xl">
+                Presence
+            </h2> */}
 
             <div className="grid w-full grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
                 {socials.map(({ label, href, icon: Icon }) => (
@@ -16,7 +16,7 @@ export function SocialLinks() {
                         key={label}
                         asChild
                         variant="outline"
-                        className="group h-12 w-full rounded-lg border-border/50 bg-transparent px-4 py-2 text-foreground/80 transition-all duration-300 hover:scale-105 hover:bg-muted hover:shadow-sm active:scale-95"
+                        className="group h-12 w-full rounded-lg border-border bg-transparent px-4 py-2 text-foreground/80 transition-all duration-300 hover:scale-105 hover:bg-muted hover:shadow-sm active:scale-95"
                     >
                         <a 
                             href={href} 
@@ -24,7 +24,7 @@ export function SocialLinks() {
                             rel={"noreferrer"}
                             className="flex w-full items-center justify-between"
                         >
-                            <div className="flex items-center gap-2.5">
+                            <div className="flex items-center gap-2">
                                 <Icon className="size-4 opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
                                 <span className="text-sm font-medium">{label}</span>
                             </div>

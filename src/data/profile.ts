@@ -7,6 +7,7 @@ export const profile = {
   tagline: "Backend • AI • Infrastructure",
   location: "Hyderabad, India",
   bio: "Building developer infrastructure, scalable backend systems, and AI-powered applications. Passionate about distributed systems, context engineering, and creating software that solves real-world problems.",
+  email: "gunasai1305@gmail.com",
   about: [
     "I enjoy building software that solves real problems. From backend systems and AI applications to developer tools, I'm always curious about how things work beneath the surface.",
     "I believe good software comes from understanding the fundamentals, paying attention to the details, and constantly improving with every project.",
