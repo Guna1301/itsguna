@@ -1,6 +1,6 @@
 import Arbiter from "@/assets/images/projects/Arbiter.png";
 import BrainWave from "@/assets/images/projects/BrainWave.png";
-import Conlea from "@/assets/images/projects/Conlea.png";
+import Conlea from "@/assets/images/projects/conlea.png";
 import VisitorManagement from "@/assets/images/projects/VisitorManagement.png";
 
 import type { Project } from "@/types/project";
