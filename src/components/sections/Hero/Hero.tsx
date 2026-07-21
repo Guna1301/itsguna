@@ -1,4 +1,3 @@
-import { Container } from "@/components/common/Container";
 import { Section } from "@/components/common/Section";
 
 import { HeroBanner } from "./HeroBanner";

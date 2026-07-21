@@ -1,4 +1,4 @@
-import type { Project } from "@/data/projects";
+import type { Project } from "@/types/project";
 
 import { GithubIcon } from "@/assets/icons/GithubIcon";
 import { ArrowUpRightIcon } from "@/assets/icons/ArrowUpRightIcon";

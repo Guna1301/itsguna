@@ -2,7 +2,6 @@ import { ArrowUpRight } from "lucide-react";
 import { timeline } from "@/data/timeline";
 import { TimelineList } from "./TimelineList";
 
-import { Container } from "@/components/common/Container";
 import { Section } from "@/components/common/Section";
 
 export function Timeline() {

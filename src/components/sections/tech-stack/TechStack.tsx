@@ -2,7 +2,6 @@ import { useState } from "react";
 import type { Category } from "@/types/tech-stack";
 import { techStack } from "@/data/tech-stack";
 
-import { Container } from "@/components/common/Container";
 import { Section } from "@/components/common/Section";
 
 import { TechFilters } from "./TechFilters";

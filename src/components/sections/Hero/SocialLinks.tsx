@@ -14,7 +14,6 @@ export function SocialLinks() {
                 {socials.map(({ label, href, icon: Icon }) => (
                     <Button
                         key={label}
-                        asChild
                         variant="outline"
                         className="group h-12 w-full rounded-lg border-border bg-transparent px-4 py-2 text-foreground/80 transition-all duration-300 hover:scale-105 hover:bg-muted hover:shadow-sm active:scale-95"
                     >

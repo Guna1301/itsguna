@@ -1,4 +1,4 @@
-import type { TimelineItem as TimelineItemType } from "@/data/timeline";
+import type { TimelineItem as TimelineItemType } from "@/types/timeline";
 import { TimelineItem } from "./TimelineItem";
 
 interface TimelineListProps {
