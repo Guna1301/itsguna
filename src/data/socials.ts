@@ -18,11 +18,11 @@ export const socials = [
     href: "https://www.linkedin.com/in/guna-sai-3673592ba/",
     icon: Briefcase,
   },
-  {
-    label: "X",
-    href: "https://x.com/gsxvoid",
-    icon: AtSign,
-  },
+  // {
+  //   label: "X",
+  //   href: "https://x.com/gsxvoid",
+  //   icon: AtSign,
+  // },
   {
     label: "Dev.to",
     href: "https://dev.to/guna01", 
@@ -35,7 +35,7 @@ export const socials = [
   },
   {
     label: "Resume",
-    href: "/resume.pdf",
+    href: "/resume1.pdf",
     icon: FileDown,
   },
 ];
